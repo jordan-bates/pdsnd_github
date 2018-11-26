@@ -159,7 +159,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        #TO DO - ask the user if they want raw data  (using .head() from class lesson)
+        # Ask the user if they want to see raw data from the .csv files
         get_raw_data = input('Would you like to see raw data? Select "Yes" or "No"')
         if get_raw_data.lower() == 'yes':
             print(df.head())
