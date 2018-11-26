@@ -133,7 +133,7 @@ def user_stats(df):
     user_count = df['User Type'].value_counts()
     print("There are " + str(user_count[1]) + " customer users, and " +
           str(user_count[0]) + " subscriber users.")
-    # Display counts of gender
+    # Display how many male and female users are present
     if 'Gender' in df.columns:
         gender_counts = df['Gender'].value_counts()
         print("There are  " + str(gender_counts[0]) + " males, and " +
