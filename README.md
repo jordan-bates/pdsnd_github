@@ -1,15 +1,15 @@
 ### Date created
-Include the date you created this project and README file.
+This project was created on November 25th 2018.
 
 ### Project Title
-Replace the Project Title
+This is the Udacity Bikeshare Project from the Programming for Data Science Nanodegree program
 
 ### Description
-Describe what your project is about and what it does
+This is the program that lets the user explore bike share data from New York, Chicago, and Washington
 
 ### Files used
-Include the files used
+chicago.csv, new_york_city.csv, washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+All work is my own with credit to the Udacity mentors and fellow students helping each other out in the Student Hub
 
