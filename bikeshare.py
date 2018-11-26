@@ -124,7 +124,7 @@ def trip_duration_stats(df):
     print('-'*40)
 
 def user_stats(df):
-    """Displays statistics on bikeshare users."""
+    """Displays statistics on the ages and genders of bikeshare users."""
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
@@ -133,7 +133,7 @@ def user_stats(df):
     user_count = df['User Type'].value_counts()
     print("There are " + str(user_count[1]) + " customer users, and " +
           str(user_count[0]) + " subscriber users.")
-    # Display counts of gender
+    # Display how many male and female users are present
     if 'Gender' in df.columns:
         gender_counts = df['Gender'].value_counts()
         print("There are  " + str(gender_counts[0]) + " males, and " +
@@ -159,7 +159,7 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df)
-        #TO DO - ask the user if they want raw data  (using .head() from class lesson)
+        # Ask the user if they want to see raw data from the .csv files
         get_raw_data = input('Would you like to see raw data? Select "Yes" or "No"')
         if get_raw_data.lower() == 'yes':
             print(df.head())
